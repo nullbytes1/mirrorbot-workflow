@@ -41,7 +41,7 @@ jobs:
           docker image ls
 
       - name: running Docker
-        timeout-minutes: 600
+        timeout-minutes: 360
         continue-on-error: true
         run: |
           docker run --privileged --rm -i mirror-bot
